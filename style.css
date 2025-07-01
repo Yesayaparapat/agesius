@@ -1,0 +1,476 @@
+ :root {
+     --pink: #f14e95;
+     --bg: #0a0a0a;
+     --shadow: 0 1px 1px rgba(0, 0, 0,  0.5);
+ }
+
+ body {
+     font-size: 1.2 rem;
+     /* font-family: 'Sacramento', cursive; */
+     font-family: 'Work Sans', sans-serif;
+     min-height: 4000px;
+ }
+
+.hero::before {
+   content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-image: url(img/4.jpg);
+   background-size: cover;
+   background-position: center;
+   z-index: -1;
+   filter: grayscale()
+}
+
+ .hero{
+     min-height: 100vh;
+     /* background-color: var(--bg); */
+ }
+.hero h1,h4{
+   text-shadow: var(--shadow);
+}
+
+ .hero h2{
+   font-family: 'Allura', cursive;
+    font-size: 5rem;
+ }
+
+ .hero h4{
+    font-size: 1.6rem;
+ }
+
+ .hero p{
+    font-size: 1.4rem;
+    font-weight: bold;
+ }
+
+ .hero a{
+    color: var(--pink);
+    background-color: white;  
+ }
+
+ .hero a:hover {
+    background-color:var(--pink);
+    color: white;
+ }
+
+.mynavbar{
+   background-color: rgba(255, 255, 255, 0.3) !important;
+   backdrop-filter: blur(4px);
+}
+
+.mynavbar .offcanvas {
+   height: 100vh;
+}
+
+
+.mynavbar .navbar-brand, 
+.mynavbar .offcanvas-title {
+   font-family: 'Allura', cursive;
+   font-weight: bold;
+   font-size: 4rem;
+}
+
+.mynavbar .nav-link{
+   text-transform:uppercase ;
+}
+
+
+.home{
+   background-image: url(img/nnnnn.jpg);
+   background-size: cover;
+   background-position: center;
+   min-height: 90vh;
+   margin-top: -6rem;
+   padding-top: 10rem;
+   padding-bottom: 5rem;
+}
+.home h2,
+.galery h2,
+.rsvp h2,
+.gifst h2 {
+   color: var(--pink);
+   font-family: 'Allura', cursive;
+   font-size: 5rem;
+   font-weight: bold;
+}
+
+
+.arliss{
+   margin-top: 60px;
+}
+
+.home h3{
+  color: #444; 
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.home p{
+   font-size: 1.1rem;
+   color: #666;
+}
+
+.home .couple{
+   margin-top: 100px;
+}
+
+.home .couple h3{
+   font-family: 'Allura';
+   font-size: 2.4rem;
+   color: var(--pink);
+}
+
+.home .couple img {
+   width: 100%;
+}
+.home .heart{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    display: flex;
+    border-radius:50%;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) translateY(75px);
+}
+
+.home .heart i{
+    margin: auto;
+    color: var(--pink);
+}
+
+
+.info{
+   background-color: var(--bg);
+   color: white;
+   padding-top: 10rem;
+   padding-bottom: 8rem;
+}
+
+.info h2{
+   color: var(--pink);
+   font-family: 'Allura';
+   font-size: 5rem;
+   font-weight: bold;
+}
+
+.info .alamat{
+   font-size: 1.1rem;
+
+}
+
+.info .description{
+   font-size: 1rem;
+   
+}
+
+.info .card{
+   background-color: rgba(255,255,255, 0.2) !important;
+   color: white !important;
+   border: 1px solid #999;
+}
+
+.info .card-header{
+   border-bottom: 1px solid #999;
+   text-transform: uppercase;
+   letter-spacing: 0.1rem;
+
+}
+
+.info .card-body{
+   font-size: 1rem;
+}
+
+.info .card-footer{
+   border-top: 1px solid #999;
+   font-size: 0.9rem;
+   font-weight: 300;
+}
+
+.galery,
+.rsvp,
+.gifst {
+   padding-top: 10rem;
+   padding-bottom: 8rem;
+   background-color: #f5f5f5;
+}
+
+.galery span,
+.gifst span{
+   text-transform: uppercase;
+   color: #666;
+   font-size: 0.9rem;
+   letter-spacing: 1px;
+   display: block;
+   margin-bottom: 1rem;
+}
+
+.galery p,
+.rsvp p,
+.gifst p{
+   font-size: 1rem;
+   font-weight: 300;
+}
+
+.rsvp{
+   background-color: var(--bg);
+}
+.rsvp h2{
+   font-size: 4.5rem;
+}
+
+.rsvp p{
+   color: white;
+}
+
+.rsvp form label{
+   color: white;
+}
+
+.rsvp button {
+   background-color: var(--pink);
+   color: white;
+   border: 1px solid var(--pink);
+}
+.rsvp button:hover {
+   background-color: white;
+   color: var(--pink);
+   border: 1px solid white;
+}
+
+
+
+
+footer{
+   padding: 3rem;
+   background-color: var(--pink);
+   color: white;
+}
+footer a{
+   color: var(--bg) ;
+   font-weight: bold;
+   text-decoration: none;
+}
+
+footer a:hover{
+   color: white;
+}
+
+footer li{
+   list-style: none;
+   display: inline;
+   margin: 0.5rem;
+}
+
+.icon-large{
+   font-size: 3rem;
+   color: black;
+}
+
+.icon-large:hover{
+   color: var(--pink);
+}
+
+.audio-icon-wrapper{
+   width: 4rem;
+   height: 4rem;
+   font-size: 4rem;
+   position: fixed;
+   bottom: 2.5rem;
+   right: 2rem;
+   cursor: pointer;
+   color: white;
+   opacity: 0.5;
+   mix-blend-mode: difference;
+   animation: rotating 4s linear infinite;
+   transform-origin: center ;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   line-height: 0;
+}
+.no-underline{
+   text-decoration: none;
+}
+
+@keyframes rotating {
+   from{
+      transform: rotate(0);
+   }
+   to{
+      transform: rotate(360deg);
+   }
+}
+
+
+/* media query */
+@media (max-width:992px) {
+   .home .heart{
+      transform: translateX(-50%) translateY(55px);
+   }
+
+   .home .heart {
+      display: none;
+   }
+}
+/* laptop */
+@media (max-width:992px) {
+   html{
+      font-size: 75%;
+   }
+
+
+   .simply-countdown>.simply-section{
+      padding: 75px;
+   }
+}
+/* tablet */
+@media (max-width:  768px){
+   html{
+      font-size: 55%;
+   }
+
+   .mynavbar .nav-link{
+      font-size: 2rem;
+      text-align: center;
+}
+
+.sticky-top{
+   overflow: hidden;
+}
+}
+/* hp */
+@media (max-width: 576px ) {
+   html {
+       font-size: 35%;
+   }
+
+   #inputContainer{
+      /* float:left; */
+      /* top:-40px */
+      margin-top:4opx;
+   }
+   #namaInput{
+      width:150px;
+      padding:5px 0 5px 0;
+      font-size:2.2rem;
+   }
+   .home img{
+      width: 50px;
+      height: 150px;
+   }
+      .hero h4{
+         font-size:2.6rem;
+      }
+   .home p{
+      font-size: 2.2rem;
+      text-align:center;
+      margin:20px;
+   }
+    .hitam{
+      align-item:center
+    }
+   .home h3{
+      font-size: 3rem;
+      text-align:center;
+   }
+   .home .heart{
+      font-size:20px
+   }
+   .home h2{
+      font-size: 7rem;
+   }
+   .info .alamat{
+      font-size: 2.1rem;
+   
+   }
+
+   .home .couple h3{
+      font-size: 5rem;
+   }
+
+   .info .description {
+      font-size: 1.7rem;
+   }
+   .info .card-header{
+      font-size: 3rem;
+   }
+   .info .card-body{
+      font-size: 2rem;
+   }
+  .info .card-footer{
+   font-size: 2rem;
+  }
+  .info h2{
+   font-size: 7rem;
+  }
+
+  .info .sabat{
+   font-size: 2rem;
+  }
+  .galery h2{
+   font-size: 8rem;
+  }
+  .galery span{
+   font-size: 1.7rem;
+  }
+  .galery p{
+   font-size: 2rem;
+   font-family: 'Wellfleet', monospace;
+  }
+  .rsvp h2{
+   font-size: 8rem;
+  }
+  .rsvp p{
+   font-size: 1.6rem;
+  }
+  .rsvp form label{
+   font-size: 2rem;
+  }
+  .rsvp .form-control{
+   font-size: 2rem;
+  }
+  .rsvp .form-select{
+   font-size: 2rem;
+  }
+  .rsvp .btn-primary{
+   font-size: 2rem;
+  }
+
+  .gifst h2{
+   font-size: 9rem;
+  }
+  .gifst span{
+   font-size: 2rem;
+  }
+  .gifst p{
+   font-size: 2rem;
+  }
+  .gifst li{
+   font-size: 2rem;
+  }
+  #copyButton{
+   border: none;
+  }
+  #copyButton1{
+   border: none;
+  }
+  .gifst li{
+   text-decoration: none;
+  }
+  .home h4{
+   font-size: 3rem;
+  }
+  footer{
+   font-size: 2.5rem;
+   text-align: center; 
+   bottom: 0;
+   left: 0; 
+   right: 0;  
+}
+}
